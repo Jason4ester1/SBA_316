@@ -44,10 +44,14 @@ const h2 = document.getElementById("h2").innerHTML = "Doffee Coffee"
 
 const button = document.getElementById('btn')
 const coffeeList = document.getElementById('coffee-list')
-button.addEventListener("click", (event) => {
+const form = document.getElementById('submit-coffee');
+const coffee = document.getElementById("cname")
+const price = document.getElementById("pname") 
+
+form.addEventListener("submit",(event)=>{
+  event.preventDefault();
   const newListItem = document.createElement("li")
-  console.log(newListItem)
-  newListItem.innerHTML = 'hazelnut: $5:00'
+  newListItem.innerHTML = coffee.value + '- $' + price.value
   coffeeList.append(newListItem)
   options[options.length -1].addEventListener("mouseover", (event) => {
     event.preventDefault();
