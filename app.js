@@ -1,4 +1,4 @@
-const date = 'Time: ' + new Date().getHours() + ':' + new Date().getMinutes()
+const date = 'Time to drink doffee: ' + new Date().getHours() + ':' + new Date().getMinutes()
 const topArea = document.getElementById("top-area")
 
 window.addEventListener("load", (event) => {
@@ -41,8 +41,6 @@ function addElement() {
 
 const about = document.querySelector("#about")
 const h2 = document.getElementById("h2").innerHTML = "Doffee Coffee"
-about.appendChild.h2
-
 
 const button = document.getElementById('btn')
 const coffeeList = document.getElementById('coffee-list')
