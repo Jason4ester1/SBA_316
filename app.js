@@ -42,4 +42,4 @@ about.appendChild.h2
 console.log(h2)
 
 document.getElementById("#").addEventListener("click", displayDate);
- 
+  
